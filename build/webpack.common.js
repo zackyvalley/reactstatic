@@ -9,11 +9,11 @@ const Pages = require(path.resolve('.config/webpack/pages.js'));
 
 module.exports = {
   entry: {
-    'assets/js/main': ['./src/assets/es6/main.es6'],
-    'assets/js/react': ['./src/pages/react/_app.jsx'],
+    'assets/js/main': ['../src/assets/es6/main.es6'],
+    'assets/js/react': ['../src/pages/react/_app.jsx'],
   },
   output: {
-    path: path.resolve(__dirname, 'dist/'),
+    path: path.resolve(__dirname, '../dist/'),
     publicPath: '/',
   },
   module: {
@@ -72,7 +72,7 @@ module.exports = {
       new BrowserSyncPlugin({
         host: 'localhost',
         port: 3000,
-        server: { baseDir: ['./dist'] },
+        server: { baseDir: ['../dist'] },
         // files: ['assets/*.css', 'assets/*.js', '../source/html/*.html']
       })
     ]

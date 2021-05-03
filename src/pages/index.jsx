@@ -4,7 +4,7 @@ import { myRenderToStaticMarkup } from "../hooks";
 import { Layout } from "../layout";
 import Picture from '../components/Picture';
 
-// const App = () => <div>Use React !!</div>;
+const App = () => <div>Use React !!</div>;
 
 export default () => {
   return myRenderToStaticMarkup(
@@ -14,6 +14,7 @@ export default () => {
         <meta name="description" content="トップページ説明文です" />
         <body class="test" />
       </Helmet>
+      <App />
       <Picture pcimg='https://placekitten.com/1200/600' spimg='https://placekitten.com/750/600' />
     </Layout>
   )

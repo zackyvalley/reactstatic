@@ -1,7 +1,7 @@
 const glob = require('glob');
 const path = require('path');
 
-const PAGE_ROOT = 'src/pages/';
+const PAGE_ROOT = '../src/pages/';
 
 const pages = glob.sync(`**/*.jsx`, {
   ignore: `**/_*.jsx`,
